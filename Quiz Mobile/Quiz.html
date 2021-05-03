@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            tr,td,span{
+                text-align:left;
+            }
+            </style>
+    </head>
+    <body>
+   <script type="text/javascript" src="quiz.js" defer=""></script>
+   <div align="center" style="background-color:black;color:white;">
+      <h1 id="title" >Quiz</h1> 
+   </div> 
+   <div style="display:block" id='t1'> 
+           <table>
+               <tr><td colspan="3"><h2 id="ques"></h2></td></tr>    
+     <tr><td><input type="radio" id="o1"  name='radiobutton'></td><td colspan="2"><span id="o11"></span></td></tr>
+     <tr><td><input type="radio" id="o2" name='radiobutton'></td><td colspan="2"><span id="o22"></span></td></tr>
+     <tr><td><input type="radio" id="o3" name='radiobutton'></td><td colspan="2"><span id="o33"></span></td></tr>
+     <tr><td><input type="radio" id="o4" name='radiobutton'></td><td colspan="2"><span id="o44"></span></td></tr>
+  <tr><td colspan="3"> <input type="submit" value="Submit" style="display:block;" onclick="check()"  id="submit"></td></tr>
+  <tr><td colspan="3"><p style="display:none;color:green;" id="correct">Correct<p></td></tr>
+          <tr><td colspan="3"><p style="display:none;color:red;" id="wrong">Wrong<p></td></tr>
+            <tr><td colspan="3"><input type="button" value="Next" style="display:none;" id="next" onclick="next1()"></td></tr>
+           </table>
+   </div>
+
+   <table style="display:none;" id="ta2">
+       <tr><td id="q1">jl</td>  <td id="a1">hhj</td></tr>
+        <tr><td id="q2"></td><td id="a2"></td></tr>
+         <tr><td id="q3"></td><td id="a3"></td></tr>
+          <tr><td id="q4"></td><td id="a4"></td></tr>
+           <tr><td id="q5"></td><td id="a5"></td></tr>
+            <tr><td id="q6"></td><td id="a6"></td></tr>
+             <tr><td id="q7"></td><td id="a7"></td></tr>
+              <tr><td id="q8"></td><td id="a8"></td></tr>
+               <tr><td id="q9"></td><td id="a9"></td></tr>
+   </table>
+<br>
+   <BUTTON id="restart" style="display:none" onclick="re()">Restart</BUTTON>
+    </body>
+</html>
